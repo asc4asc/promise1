@@ -27,10 +27,10 @@ test me please: <p id="demo"></p>
 
 let myPromise = new Promise(function(myResolve, myReject) {
   setTimeout(function(){ myResolve("I love You !!"); }, 3000);
-});
+}
 .then(function(value) {
   document.getElementById("demo1").innerHTML = value;
-});   
+}   
 .then(function(value) {
    doit(value);  
 });    
