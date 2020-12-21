@@ -31,11 +31,10 @@ let myPromise = new Promise(function(myResolve, myReject) {
 
 myPromise.then(function(value) {
   document.getElementById("demo").innerHTML = value;
-  doit();  
+  doit(value);  
 });
 
-let s="";    
-function doit() {
+function doit(s) {
   for (let i=0; i < 10; i++) {  
     s = "Hello JavaS"+i+"<br>"+s; 
     document.getElementById("demo").innerHTML = s;
