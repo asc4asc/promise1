@@ -1,7 +1,7 @@
 Javascript code muss noch bereinigt werden. 
 
-Arrow functions noch behandeln?
+.then
 
-const square1 = (x) => { return x * x; };
+.catch
 
-const square2 = x => x * x;
+.???
