@@ -31,8 +31,11 @@ let myPromise = new Promise(function(myResolve, myReject) {
 
 myPromise.then(function(value) {
   document.getElementById("demo").innerHTML = value;
-  doit(value);  
 });
+    
+myPromise.then(function(value) {
+   doit(value);  
+});    
 
 function doit(s) {
   for (let i=0; i < 10; i++) {  
